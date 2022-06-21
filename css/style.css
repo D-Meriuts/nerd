@@ -1,0 +1,326 @@
+/* Variables */
+:root {
+  --basic-grey: #EEEEEE;
+  --basic-grey-hover: #DFDFDF;
+  --basic-grey-active: #D5D5D5;
+  --basic-grey-current-pagination: #DBDBDB;
+  --basic-black-color: #000000;
+  --basic-text-color: #283136;
+  --basic-white: #FFFFFF;
+  --basic--extra-grey:#666666;
+  --basic-dark-grey:#444444;
+  --basic-orange: #FB565A;
+  --basic-orange-hover:#E74246;
+  --basic-orange-active:#D7373B;
+  --basic-green: #00CA74;
+  --basic-green-hover:#00BC6C;
+  --basic-green-active:#00AA62;
+  --basic-yellow: #EFC849;
+  --basic-yellow-hover: #EAB534;
+  --basic-yellow-active: #E5A722;
+
+
+
+}
+
+/* Global */
+
+body {
+  min-width: 1140px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-text-color);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* main-navigation  */
+
+.main-navigation {
+  background-color: var(--basic-grey);
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:var(--basic-black-color);
+}
+
+.site-navigation {
+  list-style-type: none;
+  color: var(--basic-black-color)
+}
+
+.site-navigation-link,
+.header-cart{
+color: var(--basic-black-color);
+}
+
+.site-navigation-link:hover,
+.header-cart:hover {
+color: var(--basic-orange);
+}
+
+.site-navigation-link:active,
+.header-cart:active {
+  color: var(--basic-black-color);
+  opacity: 30%;
+}
+
+/* не знаю как сделать состояние нахождение на странице для вкладок */
+
+.main-header-logo:hover,
+.header-logo:hover {
+  opacity: 70%;
+}
+
+.main-header-logo:active,
+.header-logo:active {
+  opacity: 30%;
+}
+
+.current {
+  text-decoration: underline;
+  text-decoration-color: var(--basic-orange);
+}
+
+/* slides */
+
+.slides {
+  background-color: var(--basic-grey);
+
+
+}
+.tagline {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black-color);
+}
+
+/* Buttons */
+
+.button {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.button,
+.button-more,
+.button-orange {
+  background-color: var(--basic-orange);
+  columns: var(--basic-white);
+  padding-top: 17px;
+  padding-right: 54px;
+  padding-bottom: 15px;
+  padding-left: 54px;
+}
+.button:hover,
+.button-more:hover,
+.button-orange:hover {
+  background-color: var(--basic-orange-hover);
+}
+
+.button:active,
+.button-more:active,
+.button-orange:active {
+  background-color: var(--basic-orange-active);
+}
+
+.button-green{
+  background-color: var(--basic-green);
+}
+
+.button-green:hover{
+  background-color: var(--basic-green-hover);
+}
+
+.button-green:active{
+  background-color: var(--basic-green-active);
+}
+
+.button-yellow{
+  background-color: var(--basic-yellow);
+}
+
+.button-yellow:hover{
+  background-color: var(--basic-yellow-hover);
+}
+
+.button-yellow:active{
+  background-color: var(--basic-yellow-active);
+}
+
+.button-price {
+  border: none;
+}
+.site-button {
+  background-color: var(--basic-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black-color);
+  border: none;
+}
+
+.site-button:hover {
+  background-color: var(--basic-grey-hover);
+}
+.site-button:active {
+  background-color: var(--basic-grey-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.current-pagination {
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-grey-current-pagination);
+
+}
+
+
+/* section about company  */
+
+.about-company-tagline {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black-color);
+}
+
+.features p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px
+}
+
+.advantage p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px
+}
+
+dt {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+dd {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* section partners  */
+
+.partners-item {
+  opacity: 20%;
+}
+
+.partners-item:hover  {
+  opacity: 100%;
+}
+
+.partner:active {
+  opacity: 10%;
+}
+
+/* footer  */
+
+.contacts p, a {
+  color:var(--basic--extra-grey);
+}
+
+.map-image{
+  width: 100%;
+}
+
+.welcome-sale {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black-color);
+}
+
+.sale {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-dark-grey);
+}
+
+/* modal  */
+
+.modal-header {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black-color);
+}
+
+.modal-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black-color);
+}
+
+/* catalog */
+
+.catalog-page-header{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black-color);
+  background-color: var(--basic-grey);
+}
+
+.filters,
+.sort {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black-color);
+}
+
+.for-range {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.filters-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sort-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
