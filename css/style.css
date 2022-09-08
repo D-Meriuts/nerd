@@ -85,12 +85,21 @@ p {
   gap: 25px;
   width: 1160px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .site-navigation {
   list-style-type: none;
   color: var(--basic-black-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.header-cart{
+  padding-left: 50px;
 }
 
 .site-navigation-link,
