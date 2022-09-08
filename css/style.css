@@ -95,9 +95,19 @@ p {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
+.site-navigation-link {
+  margin-right: 45px;
+}
+
+.site-navigation li:first-child{
+  margin-left: auto;
+}
+.site-navigation li:last-child{
+  margin-right: auto;
+}
 .header-cart{
   padding-left: 50px;
 }
