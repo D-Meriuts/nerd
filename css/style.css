@@ -63,17 +63,16 @@ p {
 }
 
 /* main-header */
+.main-header {
 
+}
 
 .main-header-bar{
   background-color: var(--basic-grey);
+  padding-top: 50px;
+
 }
 /* main-navigation  */
-.site-navigation{
-  margin: 0;
-  padding: 0;
-}
-
 .main-navigation {
   background-color: var(--basic-grey);
   line-height: 30px;
@@ -86,28 +85,26 @@ p {
   width: 1160px;
   margin: 0 auto;
   align-items: center;
+
 }
+
 
 .site-navigation {
   list-style-type: none;
   color: var(--basic-black-color);
-  margin: 0;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
+
+  }
 
 .site-navigation-link {
   margin-right: 45px;
+  flex-grow: 1;
 }
 
-.site-navigation li:first-child{
-  margin-left: auto;
-}
-.site-navigation li:last-child{
-  margin-right: auto;
-}
 .header-cart{
   padding-left: 50px;
 }
@@ -236,15 +233,22 @@ color: var(--basic-orange);
   padding-bottom: 32px;
 }
 
+
+/* section about company  */
 /* about-company */
 .about-company {
+  /* grid
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 40px;
+  column-gap: 40px;*/
+  /* flex */
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
   padding-top: 39px;
   padding-bottom: 73px;
 }
-/* section about company  */
+
 
 .about-company-tagline {
   font-weight: 500;
@@ -278,10 +282,43 @@ dd {
 }
 
 /* about-company-left-column */
+.about-company-left-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-company-tagline {
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+.about-company-mission {
+  margin-bottom: 52px;
+  margin-left: 9px;
+}
+.features p {
+  margin-bottom: 23px;
+}
+
+.features-list{
+  margin: 0;
+  padding: 0;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .about-company-left-column {
-  grid-column: 1/8;
+  /* grid-column: 1/8; */
+  /* display: flex;
+  flex-direction: column;
+justify-content: space-between;*/
 }
 /* about-company-right-column */
+.about-company-right-column img {
+  margin-bottom: 37px;
+}
 .about-company-right-column{
   grid-column: -1/-5;
 }
@@ -289,10 +326,17 @@ dd {
   text-align: center;
   text-transform: uppercase;
 }
+
+.advantage p {
+  margin-bottom: 31px;
+}
 .advantage-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  column-gap: 20px;
+  row-gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 .advantage-list dt {
