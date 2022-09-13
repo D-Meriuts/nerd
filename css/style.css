@@ -63,9 +63,6 @@ p {
 }
 
 /* main-header */
-.main-header {
-
-}
 
 .main-header-bar{
   background-color: var(--basic-grey);
@@ -235,101 +232,95 @@ color: var(--basic-orange);
 
 
 /* section about company  */
-/* about-company */
 .about-company {
-  /* grid
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 40px;*/
-  /* flex */
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   padding-top: 39px;
-  padding-bottom: 73px;
+  padding-bottom: 75px;
 }
-
 
 .about-company-tagline {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black-color);
+  margin-top: 34px;
+  margin-bottom: 32px;
 }
 
-.features p {
+.features dt {
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features-item{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .advantage p {
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px
+  line-height: 24px;
+  margin-bottom: 31px;
 }
 
-dt {
+.advantage-list dt {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
 }
 
-dd {
+.advantage-list dd {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
 
-/* about-company-left-column */
 .about-company-left-column{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.about-company-tagline {
-  margin-top: 34px;
-  margin-bottom: 20px;
-}
 .about-company-mission {
-  margin-bottom: 52px;
-  margin-left: 9px;
-}
-.features p {
-  margin-bottom: 23px;
+  margin-bottom: 40px;
 }
 
-.features-list{
+.features dl {
   margin: 0;
   padding: 0;
-  padding-left: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.about-company-left-column {
-  /* grid-column: 1/8; */
-  /* display: flex;
-  flex-direction: column;
-justify-content: space-between;*/
+.features-item {
+  margin-bottom: 25px;
 }
-/* about-company-right-column */
+.features-item:last-child {
+  margin-bottom: 0;
+}
+
+
+.about-company-right-column{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
 .about-company-right-column img {
   margin-bottom: 37px;
 }
-.about-company-right-column{
-  grid-column: -1/-5;
-}
+
 .about-company-right-column p {
   text-align: center;
   text-transform: uppercase;
 }
 
-.advantage p {
-  margin-bottom: 31px;
-}
+
 .advantage-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -350,6 +341,8 @@ justify-content: space-between;*/
 /* section partners  */
 .partners-list {
   margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 176px;
@@ -372,23 +365,44 @@ justify-content: space-between;*/
   opacity: 10%;
 }
 
-/* Buttons */
+/* ALL SITE Buttons */
 
 .button {
-  color: var(--basic-white);
   text-transform: uppercase;
   border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.button-more{
+  padding-top: 17px;
+  padding-right: 54px;
+  padding-bottom: 15px;
+  padding-left: 54px;
+}
+.contacts__btn {
+  padding-top: 17px;
+  padding-right: 45x;
+  padding-bottom: 15px;
+  padding-left: 45px;
+}
+
+.button-orange,
+.button-green,
+.button-yellow {
+  padding-top: 17px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
 }
 
 .button,
 .button-more,
 .button-orange {
   background-color: var(--basic-orange);
-  columns: var(--basic-white);
-  padding-top: 17px;
-  padding-right: 54px;
-  padding-bottom: 15px;
-  padding-left: 54px;
+  color: var(--basic-white);
 }
 .button:hover,
 .button-more:hover,
@@ -453,19 +467,47 @@ justify-content: space-between;*/
 
 /* footer  */
 
-.main-footer {
+.page__footer__container {
   width: 1160px;
   margin: 0 auto;
 }
 
-.contacts p, a {
+.contacts p,
+.contacts-phone {
   color:var(--basic--extra-grey);
+}
+.contacts h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+}
+.contacts {
+  outline: red solid 1px;
+  min-height: 319px;
+  width: 308px;
+  box-sizing: border-box;
+}
+
+.contacts {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__btn {
+
+}
+
+.map {
+  margin-bottom: 68px;
 }
 
 .map-image{
   width: 100%;
 }
-
+/* social на Grid */
 .social {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
