@@ -7,6 +7,7 @@
   --basic-black-color: #000000;
   --basic-text-color: #283136;
   --basic-white: #FFFFFF;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic--extra-grey:#666666;
   --basic-dark-grey:#444444;
   --basic-orange: #FB565A;
@@ -18,8 +19,6 @@
   --basic-yellow: #EFC849;
   --basic-yellow-hover: #EAB534;
   --basic-yellow-active: #E5A722;
-
-
 
 }
 
@@ -414,6 +413,8 @@ justify-content: space-between;
 .button-more:active,
 .button-orange:active {
   background-color: var(--basic-orange-active);
+  color: var(--basic-white-opacity);
+
 }
 
 .button-green{
