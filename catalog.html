@@ -18,7 +18,7 @@
     <div class="main-header-bar">
       <nav class="main-navigation">
         <a class="header-logo" href="index.html" class=""><img src="img/nerds-logo.svg" width="160" height="65"
-            alt="Логотип Nerds" /></a>
+            alt="Логотип Nerds"></a>
         <ul class="site-navigation">
           <li>
             <a class="site-navigation-link" href="index.html">Студия</a>
@@ -31,7 +31,9 @@
             <a class="site-navigation-link" href="blank.html">Контакты</a>
           </li>
         </ul>
-        <a class="header-cart" href=""> корзина </a>
+        <div class="header-cart">
+          <a href=""> корзина </a>
+        </div>
       </nav>
     </div>
   </header>
@@ -47,11 +49,13 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend class="filters">Стоимость</legend>
-            <input class="for-range" type="range" min="0" max="150000" />
-            <label class="for-range">От
-              <input class="for-range-value" type="text" name="min" value="0" /></label>
-            <label class="for-range">До
-              <input class="for-range-value" type="text" name="max" value="150000" /></label>
+            <div class="filters-price">
+              <input class="for-range" type="range" min="0" max="150000" />
+              <label class="for-range">От
+                <input class="for-range-value" type="text" name="min" value="0" /></label>
+              <label class="for-range">До
+                <input class="for-range-value" type="text" name="max" value="150000" /></label>
+            </div>
           </fieldset>
           <fieldset>
             <legend class="filters">Сетка</legend>
@@ -101,18 +105,22 @@
       </section>
       <section class="sort-bar">
         <h2 class="hidden">Сортировка</h2>
-        <fieldset>
-          <legend class="sort">Сортировать:</legend>
-          <ul>
+        <div class="sort">
+          <div class="sort-legend">Сортировать:</div>
+          <ul class="sort-list">
             <li class="sort-item"><a href="#">По цене</a></li>
             <li class="sort-item"><a href="#">По типу</a></li>
             <li class="sort-item"><a href="#">По названию</a></li>
-            <li class="sort-item">
-              <a href="#" title="по убыванию"><img src="img/arrow_11x10.svg" width="11" height="10" alt="" /></a>
-            </li>
-            <li class="sort-item"><a href="#" title="по возрастанию"></a></li>
           </ul>
-        </fieldset>
+          <ul class="sort-arrows">
+            <li class="sort-item-arrows">
+              <a href="#" title="по убыванию"><img src="img/arrow_11x10.svg" width="11" height="10" alt=""></a>
+            </li>
+            <li class="sort-item-arrows">
+              <a href="#" title="по возрастанию"><img src="img/arrow_up_11x10.svg" width="11" height="10" alt=""></a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="product-bar">
         <h2 class="hidden">Товары</h2>
@@ -211,11 +219,11 @@
       </section>
       <ul class="product-pagination">
         <li>
-          <a class="current-pagination" title="вы на этой странице">1</a>
+          <a class="button png-btn current-pagination-btn" title="вы на этой странице">1</a>
         </li>
-        <li><a class="button product-pagination-btn">2</a></li>
-        <li><a class="button product-pagination-btn">3</a></li>
-        <li><a class="button product-pagination-btn">Следующая</a></li>
+        <li><a class="button png-btn product-pagination-btn">2</a></li>
+        <li><a class="button png-btn product-pagination-btn">3</a></li>
+        <li><a class="button png-btn product-pagination-btn next-page">Следующая</a></li>
       </ul>
     </div>
   </main>
