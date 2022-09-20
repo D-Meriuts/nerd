@@ -932,7 +932,7 @@ input.for-range {
   flex-direction: column;
   width: 360px;
   min-height: 620px;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -965,7 +965,7 @@ input.for-range {
 .product-image {
   height: 578px;
   order: 2;
-  align-self: flex-start;
+  align-self: center;
 }
 
 
