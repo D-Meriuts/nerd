@@ -947,6 +947,9 @@ input.for-range {
   background-color: var(--basic-dark-color);
   order: 1;
   opacity: 12%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
 }
 
 .about-product {
@@ -957,6 +960,9 @@ input.for-range {
   position: absolute;
   bottom: 0px;
   text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
 }
 
 .product-item-name {
@@ -972,6 +978,19 @@ input.for-range {
   height: 578px;
   order: 2;
   align-self: center;
+}
+
+.product-image img {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.product li:hover .decor {
+  opacity: 1;
+}
+
+.product li:hover .about-product {
+display: block;
 }
 
 
