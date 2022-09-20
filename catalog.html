@@ -46,9 +46,9 @@
     <div class="wrapper-catalog-page">
       <section class="filters-bar">
         <h2 class="hidden">Фильтры</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filters-bar-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend class="filters">Стоимость</legend>
+            <legend class="filters-legend">Стоимость</legend>
             <div class="filters-price">
               <input class="for-range" type="range" min="0" max="150000" />
               <label class="for-range">От
@@ -60,15 +60,15 @@
           <fieldset>
             <legend class="filters">Сетка</legend>
             <ul>
-              <li class="filters-item">
+              <li class="filters-item filters-item-grid">
                 <input type="radio" name="grid-type" id="adaptive" value="Адаптивная" checsked /><label for="adaptive">
                   Адаптивная</label>
               </li>
-              <li class="filters-item">
+              <li class="filters-item filters-item-grid">
                 <input type="radio" name="grid-type" id="fixed" value="Фиксированная" /><label for="fixed">
                   Фиксированная</label>
               </li>
-              <li class="filters-item">
+              <li class="filters-item filters-item-grid">
                 <input type="radio" name="grid-type" id="rubber" value="Резиновая" /><label for="rubber">
                   Резиновая</label>
               </li>
@@ -77,24 +77,24 @@
           <fieldset>
             <legend class="filters">Особенности</legend>
             <ul>
-              <li class="filters-item">
+              <li class="filters-item filters-item-features">
                 <label><input type="checkbox" name="features" value="Слайдер" checked />
                   Слайдер</label>
               </li>
-              <li class="filters-item">
+              <li class="filters-item filters-item-features">
                 <label><input type="checkbox" name="features" value="Блок преимуществ" />
                   Блок преимуществ</label>
               </li>
-              <li class="filters-item">
+              <li class="filters-item filters-item-features">
                 <label><input type="checkbox" name="features" value="Новости" checked />
                   Новости</label>
               </li>
-              <li class="filters-item">
+              <li class="filters-item filters-item-features">
                 <label><input type="checkbox" name="features" value="Галерея" />
                   Галерея
                 </label>
               </li>
-              <li class="filters-item">
+              <li class="filters-item filters-item-features">
                 <label><input type="checkbox" name="features" value="Корзина" />
                   Корзина</label>
               </li>
@@ -126,7 +126,8 @@
         <h2 class="hidden">Товары</h2>
         <ul class="product">
           <li class="product-item">
-            <div class="product-item-conteiner">
+            <div class="decor"></div>
+            <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Sedona</h3>
               </a>
@@ -138,10 +139,11 @@
                 9 900 ₽
               </button>
             </div>
-            <img src="img/cart_sedona.jpg" width="358" height="578" alt="SEDONA" />
+            <div class="product-image"><img src="img/cart_sedona.jpg" width="358" height="578" alt="SEDONA" /></div>
           </li>
           <li class="product-item">
-            <div class="product-item-conteiner">
+            <div class="decor"></div>
+            <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Pink App</h3>
               </a>
@@ -153,10 +155,11 @@
                 9 900 ₽
               </button>
             </div>
-            <img src="img/cart_pink.jpg" width="358" height="578" alt="Pink App" />
+            <div class="product-image"><img src="img/cart_pink.jpg" width="358" height="578" alt="Pink App" /></div>
           </li>
           <li class="product-item">
-            <div class="product-item-conteiner">
+            <div class="decor"></div>
+            <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Barbershop</h3>
               </a>
@@ -168,10 +171,12 @@
                 9 900 ₽
               </button>
             </div>
-            <img src="img/cart_barbershop.jpg" width="358" height="578" alt="Barbershop" />
+            <div class="product-image"><img src="img/cart_barbershop.jpg" width="358" height="578" alt="Barbershop" />
+            </div>
           </li>
           <li class="product-item">
-            <div class="product-item-conteiner">
+            <div class="decor"></div>
+            <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Mishka</h3>
               </a>
@@ -183,10 +188,11 @@
                 9 900 ₽
               </button>
             </div>
-            <img src="img/cart_mishka.jpg" width="358" height="578" alt="Mishka" />
+            <div class="product-image"><img src="img/cart_mishka.jpg" width="358" height="578" alt="Mishka" /></div>
           </li>
           <li class="product-item">
-            <div class="product-item-conteiner">
+            <div class="decor"></div>
+            <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">A plus</h3>
               </a>
@@ -198,10 +204,11 @@
                 9 900 ₽
               </button>
             </div>
-            <img src="img/cart_A_plus.jpg" width="358" height="578" alt="A plus" />
+            <div class="product-image"><img src="img/cart_A_plus.jpg" width="358" height="578" alt="A plus" /></div>
           </li>
           <li class="product-item">
-            <div class="product-item-conteiner">
+            <div class="decor"></div>
+            <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Кваст</h3>
               </a>
@@ -213,7 +220,7 @@
                 9 900 ₽
               </button>
             </div>
-            <img src="img/cart_kvast.jpg" width="358" height="578" alt="Кваст" />
+            <div class="product-image"><img src="img/cart_kvast.jpg" width="358" height="578" alt="Кваст" /></div>
           </li>
         </ul>
       </section>
