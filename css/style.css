@@ -788,7 +788,7 @@ input.for-range {
   margin-left: 33px;
   height: 80px;
 }
-.test {
+.background {
   height: 80px;
   width: 100%;
   background-color: var(--basic-grey);
