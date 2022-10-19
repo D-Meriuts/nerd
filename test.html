@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test price</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <form method="get" action="https://echo.htmlacademy.ru">
+    <fieldset class="filter-item">
+      <legend>Стоимость:</legend>
+      <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="
+            width: 50%;
+            margin-left:0;
+            "></div>
+          </div>
+          <div class="toggle toggle-min" tabindex="0" style=" left:10px;"></div>
+          <div class="toggle toggle-max" tabindex="0" style="left:46%;"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">
+            от <input type="nubmer" name="min-price" value="0">
+          </label>
+          <label class="max-price">
+            до <input type="nubmer" name="max-price" value="15000">
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
