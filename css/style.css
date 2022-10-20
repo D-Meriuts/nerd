@@ -131,17 +131,17 @@ p {
 }
 
 .site-navigation-link,
-.header-cart {
+.header-cart a {
   color: var(--basic-black-color);
 }
 
 .site-navigation-link:hover,
-.header-cart:hover {
+.header-cart a:hover {
   color: var(--basic-orange);
 }
 
 .site-navigation-link:active,
-.header-cart:active {
+.header-cart a:active {
   color: var(--basic-black-color);
   opacity: 30%;
 }
