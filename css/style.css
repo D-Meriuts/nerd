@@ -112,6 +112,7 @@ p {
 .site-navigation li {
   padding-top: 26px;
   padding-bottom: 9px;
+  z-index: 2;
 }
 
 .site-navigation-link {
@@ -481,22 +482,29 @@ p {
 }
 
 /* section partners  */
-.partners-list {
+/* .partners {
+  margin-bottom: 80px;
+}
+
+.partners ul {
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 176px;
-  gap: 40px;
+  display: flex;
   border-bottom: 2px solid var(--basic-grey);
   border-top: 2px solid var(--basic-grey);
-  align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.partners-item a {
+  height: 0;
 }
 
 .partners-item {
   opacity: 20%;
+  position: relative;
 }
 
 .partners-item:hover {
@@ -506,6 +514,63 @@ p {
 .partner:active {
   opacity: 10%;
 }
+
+.partners-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: red;
+  border: 2px solid rebeccapurple;
+} */
+
+
+
+.partners {
+  margin-bottom: 80px;
+}
+
+.partners ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  border-bottom: 2px solid var(--basic-grey);
+  border-top: 2px solid var(--basic-grey);
+  align-items: center;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.partners-item a {
+  height: 0;
+}
+
+.partners-item {
+  opacity: 20%;
+  position: relative;
+}
+
+.partners-item:hover {
+  opacity: 100%;
+}
+
+.partner:active {
+  opacity: 10%;
+}
+
+/* .partners-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: red;
+  border: 2px solid rebeccapurple;
+} */
+
 
 /* ALL SITE Buttons */
 
@@ -771,28 +836,30 @@ p {
   opacity: 30%;
 }
 
-.social .welcome-discont {
+.social p:first-of-type {
   grid-column: 4/12;
   grid-row: 1/2;
 }
 
-.social .discont {
+.social p:last-of-type {
   grid-column: 4/12;
   grid-row: 2/3;
 }
 
-.welcome-discont {
+.social p:first-of-type {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black-color);
+  margin-left: 139px;
 }
 
-.discont {
+.social p:last-of-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-grey);
+  margin-left: 139px;
 }
 
 /* modal  */
