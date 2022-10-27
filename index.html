@@ -185,6 +185,7 @@
         <li class="partners-item">
           <a class="partner" href=""><img src="img/logo-4.png" width="173" height="84" alt="Иконка MISHKA" /></a>
         </li>
+
       </ul>
     </section>
   </main>
@@ -240,24 +241,28 @@
   <!-- модальное окно -->
   <section class="modal">
     <h2 class="modal-header">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label class="modal-label" for="name">Ваше имя:</label>
-      <br>
-      <input type="text" name="Имя" id="name" placeholder="Имя Фамилия">
-      <br>
-      <label class="modal-label" for="e-mail">Ваш email:</label>
-      <br>
-      <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com ">
-      <br>
-      <label class="modal-label" for="mail">Текст письма:</label>
-      <br>
-      <textarea id="mail" name="text-mail" placeholder="В свободной форме"></textarea>
-      <br>
-      <input type="submit" value="Отправить">
-      <button class="modal-close" type="button">Закрыть</button>
-
-
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-item">
+        <label class="modal-label" for="name">Ваше имя:</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <br>
+      </p>
+      <p class="form-item">
+        <label class="modal-label" for="e-mail">Ваш email:</label>
+        <br>
+        <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com ">
+        <br>
+      </p>
+      <p class="form-item">
+        <label class="modal-label" for="mail">Текст письма:</label>
+        <br>
+        <textarea id="mail" name="text" placeholder="В свободной форме"></textarea>
+        <br>
+      </p>
+      <button class="button modal-btn" type="submit" value="">Отправить</button>
     </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
