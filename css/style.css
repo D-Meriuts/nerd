@@ -1192,6 +1192,13 @@ fieldset ul {
   margin-bottom: 15px;
 }
 
+.filters-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
 .filters-item-features {
   margin-bottom: 17px;
 }
