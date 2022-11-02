@@ -73,43 +73,57 @@
           <fieldset>
             <legend class="filters">Сетка</legend>
             <ul>
-              <li class="filters-item filters-item-grid">
-                <input class=" filter-input-radio" type="radio" name="grid-type" id="adaptive" value="Адаптивная" checked /><label for="adaptive">
-                  Адаптивная</label>
+              <li class="filters-item filters-item-radio">
+                <input class=" filter-input-radio hidden" type="radio" name="grid-type" id="adaptive" value="Адаптивная"
+                  checked />
+                <label for="adaptive" class="radio">Адаптивная</label>
+              </li>
+              <li class="filters-item filters-item-radio">
+                <input class=" filter-input-radio hidden" type="radio" name="grid-type" id="fixed"
+                  value="Фиксированная" />
+                <label for="fixed" class="radio">Фиксированная</label>
               </li>
               <li class="filters-item filters-item-grid">
-                <input class=" filter-input-radio" type="radio" name="grid-type" id="fixed" value="Фиксированная" /><label for="fixed">
-                  Фиксированная</label>
-              </li>
-              <li class="filters-item filters-item-grid">
-                <input class=" filter-input-radio" type="radio" name="grid-type" id="rubber" value="Резиновая" /><label for="rubber">
-                  Резиновая</label>
+                <input class=" filter-input-radio hidden" type="radio" name="grid-type" id="rubber" value="Резиновая" />
+                <label for="rubber" class="radio">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend class="filters">Особенности</legend>
             <ul>
-              <li class="filters-item filters-item-features">
-                <label><input class=" filter-input-checkbox" type="checkbox" name="features" value="Слайдер" checked />
-                  Слайдер</label>
+              <li class="filters-item filters-item-check">
+                <input id="filter-slider" class=" filter-input-checkbox hidden" type="checkbox" name="features"
+                  value="Слайдер" checked />
+                <label for="filter-slider" class="check">
+                  Слайдер </label>
               </li>
-              <li class="filters-item filters-item-features">
-                <label><input class=" filter-input-checkbox" type="checkbox" name="features" value="Блок преимуществ" />
-                  Блок преимуществ</label>
+              <li class="filters-item filters-item-check">
+                <input id="filter-features-block" class=" filter-input-checkbox hidden" type="checkbox" name="features"
+                  value="Блок преимуществ" />
+                <label for="filter-features-block" class="check">Блок преимуществ
+                </label>
               </li>
-              <li class="filters-item filters-item-features">
-                <label><input class=" filter-input-checkbox" type="checkbox" name="features" value="Новости" checked />
-                  Новости</label>
+              <li class="filters-item filters-item-check">
+                <input id="filter-news" class=" filter-input-checkbox hidden" type="checkbox" name="features"
+                  value="Новости" checked />
+                <label for="filter-news" class="check">
+                  Новости
+                </label>
               </li>
-              <li class="filters-item filters-item-features">
-                <label><input class=" filter-input-checkbox" type="checkbox" name="features" value="Галерея" />
+              <li class="filters-item filters-item-check">
+                <input id="filter-galery" class=" filter-input-checkbox hidden" type="checkbox" name="features"
+                  value="Галерея" />
+                <label for="filter-galery" class="check">
                   Галерея
                 </label>
               </li>
-              <li class="filters-item filters-item-features">
-                <label><input class=" filter-input-checkbox" type="checkbox" name="features" value="Корзина" />
-                  Корзина</label>
+              <li class="filters-item filters-item-check">
+                <input id="filter-cart" class=" filter-input-checkbox hidden" type="checkbox" name="features"
+                  value="Корзина" />
+                <label for="filter-cart" class="check">
+                  Корзина
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -146,7 +160,11 @@
         <h2 class="hidden">Товары</h2>
         <ul class="product">
           <li class="product-item">
-            <div class="decor"></div>
+            <ul class="product-item-header">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Sedona</h3>
@@ -162,7 +180,11 @@
             <div class="product-image"><img src="img/cart_sedona.jpg" width="358" height="578" alt="SEDONA" /></div>
           </li>
           <li class="product-item">
-            <div class="decor"></div>
+            <ul class="product-item-header">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Pink App</h3>
@@ -178,7 +200,11 @@
             <div class="product-image"><img src="img/cart_pink.jpg" width="358" height="578" alt="Pink App" /></div>
           </li>
           <li class="product-item">
-            <div class="decor"></div>
+            <ul class="product-item-header">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Barbershop</h3>
@@ -195,7 +221,11 @@
             </div>
           </li>
           <li class="product-item">
-            <div class="decor"></div>
+            <ul class="product-item-header">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Mishka</h3>
@@ -211,7 +241,11 @@
             <div class="product-image"><img src="img/cart_mishka.jpg" width="358" height="578" alt="Mishka" /></div>
           </li>
           <li class="product-item">
-            <div class="decor"></div>
+            <ul class="product-item-header">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">A plus</h3>
@@ -227,7 +261,11 @@
             <div class="product-image"><img src="img/cart_A_plus.jpg" width="358" height="578" alt="A plus" /></div>
           </li>
           <li class="product-item">
-            <div class="decor"></div>
+            <ul class="product-item-header">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
             <div class="about-product">
               <a href="">
                 <h3 class="product-item-name">Кваст</h3>
