@@ -1412,6 +1412,8 @@ input[disabled]+label {
   min-height: 620px;
   justify-content: flex-start;
   position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .product-item:hover {
