@@ -129,12 +129,8 @@
           <dl>
             <dt class="features-list">Выполняем заказы на разработку:</dt>
             <dd class="features-item">Веб-сайтов любой сложности</dd>
-            <dd class="features-item">
-              Мобильных приложений для iOS и Android
-            </dd>
-            <dd class="features-item">
-              Слайдшоу и видео для корпоративных презентаций
-            </dd>
+            <dd class="features-item">Мобильных приложений для iOS и Android</dd>
+            <dd class="features-item">Слайдшоу и видео для корпоративных презентаций</dd>
           </dl>
         </div>
       </div>
@@ -183,12 +179,12 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer main-footer">
+  <footer class="page-footer">
     <!-- тут будет карта -->
     <div class="map">
       <div class="map-image">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5baaa5e708f5cc276d0650d82e32cb45ed8c13441041d5414aa9b1915f61ca3&amp;source=constructor"
-        width="1440" height="416" frameborder="0" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+        width="100%" height="416" frameborder="0" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
       </div>
       <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="маркер на карте" />
     </div>
@@ -241,22 +237,26 @@
     </div>
   </footer>
   <!-- модальное окно -->
-  <section class="modal ">
+  <section class="modal">
     <div class="modal-window">
-      <h2 class="modal-header">Напишите нам</h2>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-item">
-          <label class="modal-label" for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
-        </p>
-        <p class="form-item">
-          <label class="modal-label" for="e-mail">Ваш email:</label>
-          <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
-        </p>
-        <p class="form-item">
-          <label class="modal-label" for="mail">Текст письма:</label>
-          <textarea id="mail" name="text" placeholder="В свободной форме"></textarea>
-        </p>
+      <h2 class="modal-header"> Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <ul class="modal-form" >
+            <li class="form-item">
+              <label class="modal-label" for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+            </li>
+            <li class="form-item">
+              <label class="modal-label" for="e-mail">Ваш email:</label>
+              <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+            </li>
+            <li class="form-item">
+              <label class="modal-label" for="mail">Текст письма:</label>
+              <textarea id="mail" name="text" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+            </li>
+          </ul>
+        </fieldset>
         <button class="button modal-btn-send" type="submit" value="">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
