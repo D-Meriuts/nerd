@@ -33,7 +33,7 @@
         </li>
       </ul>
       <div class="header-cart">
-        <a href=""> корзина </a>
+        <a href="">корзина</a>
       </div>
     </nav>
   </header>
@@ -48,30 +48,30 @@
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filters-bar-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
+            <legend class="filters">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="
-                  width: 50%;
-                  margin-left:0;
+                  width: 62%;
+                  margin-left:7%;
                   "></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style=" left:10px;"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left:46%;"></div>
+                <div class="toggle toggle-min" tabindex="0" style=" left:7%;"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left:62%;"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
                   от <input type="number" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
+                  до <input type="number" name="max-price" value="150000">
                 </label>
               </div>
             </div>
           </fieldset>
           <fieldset>
-            <legend class="filters">Сетка</legend>
+            <legend class="filters">Сетка:</legend>
             <ul>
               <li class="filters-item filters-item-radio">
                 <input class=" filter-input-radio visually-hidden" type="radio" name="grid-type" id="adaptive" value="Адаптивная"
@@ -90,7 +90,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="filters">Особенности</legend>
+            <legend class="filters">Особенности:</legend>
             <ul>
               <li class="filters-item filters-item-check">
                 <input id="filter-slider" class=" filter-input-checkbox visually-hidden" type="checkbox" name="features"
@@ -296,8 +296,8 @@
     <!-- тут будет карта -->
     <div class="map">
       <div class="map-image">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5baaa5e708f5cc276d0650d82e32cb45ed8c13441041d5414aa9b1915f61ca3&amp;source=constructor"
-        width="100%" height="416" frameborder="0" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5baaa5e708f5cc276d0650d82e32cb45ed8c13441041d5414aa9b1915f61ca3&amp;source=constructor"
+        width="100%" height="416" frameborder="0" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe> -->
       </div>
       <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="маркер на карте" />
     </div>
@@ -344,8 +344,10 @@
             </a>
           </li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </div>
   </footer>
