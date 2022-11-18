@@ -504,8 +504,6 @@ p {
   background-repeat: no-repeat;
 }
 
-
-
 .advantage-list {
   width: 360px;
   display: grid;
@@ -523,75 +521,6 @@ p {
 .advantage-list dd {
   margin: 0;
 }
-
-/* section partners  */
-
-/* секция partners Flex */
-/* .partners {
-  margin-bottom: 80px;
-}
-.partners-list{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  border-bottom: 2px solid var(--basic-grey);
-  border-top: 2px solid var(--basic-grey);
-  min-height: 180px;
-}
-
-.partner img {
-  opacity: 0.2;
-  position: relative;
-}
-
-.partner img:hover,
-.partners-item:focus-within img {
-  opacity: 1;
-}
-
-.partner img:active {
-  opacity: 0.1;
-}
-
-.partners-item {
-  position: relative;
-}
-
-.partners-item::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 2px;
-  height: 52px;
-  background-color: var(--basic-grey);
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.partners-item:nth-child(4n)::after {
-  display: none;
-}
-.partners-item:nth-child(1){
-  right: 12px;
-  top: 5px;
-}
-.partners-item:nth-child(2){
-  right: 4px;
-  top: 5px;
-}
-.partners-item:nth-child(3){
-  left: 7px;
-  top: 6px;
-}
-.partners-item:nth-child(4){
-  left: 15px;
-  top: 11px;
-} */
 
  /* секция Partners Grid */
  .partners {
@@ -646,6 +575,33 @@ p {
 
 .partners-item:nth-child(4n)::after {
   display: none;
+}
+
+.htmlacademy {
+  right: 9px;
+}
+.htmlacademy img {
+  top: 7px;
+  right: 4px;
+}
+
+.barbershop img {
+  right: 4px;
+  top: 6px;
+}
+
+.pink {
+  left: 12px;
+}
+
+.pink img {
+  right: 5px;
+  top: 6px;
+}
+
+.mishka {
+  top: 10px;
+  left: 16px;
 }
 
 /* ALL SITE Buttons */
@@ -1071,7 +1027,7 @@ p {
 
 .catalog-page-header {
   margin-top: 0;
-  padding-top: 70px;
+  padding-top: 73px;
   padding-bottom: 108px;
   text-align: center;
   margin-bottom: 55px;
