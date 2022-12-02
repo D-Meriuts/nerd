@@ -1031,6 +1031,10 @@ padding: 0; */
   z-index: 3;
   display: none;
 }
+.shown {
+  display: block;
+
+}
 
 .modal-window {
   position: relative;
