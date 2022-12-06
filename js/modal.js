@@ -38,6 +38,7 @@ window.addEventListener('keydown', function (evt) {
     if (modal.classList.contains('modal-show')) {
       evt.preventDefault();
       modal.classList.remove('modal-show');
+      modal.classList.remove('modal-error');
     }
   }
 });
@@ -45,6 +46,9 @@ window.addEventListener('keydown', function (evt) {
 form.addEventListener('submit', function(evt) {
   if (!login.value || !email.value) {
     evt.preventDefault();
+    modal.classList.remove("modal-error");
+    modal.offsetWidth = modal.offsetWidth;
+    modal.classList.add("modal-error");
   } else {
     if (isStorageSupport){
       localStorage.setItem("name", login.value);

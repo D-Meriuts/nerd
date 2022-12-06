@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 /* Variables */
 :root {
   --basic-grey: #eeeeee;
@@ -245,14 +265,8 @@ padding: 0; */
   position: relative;
 }
 
-/* .slider-list {
-margin: 0;
-padding: 0;
-} */
-
 .slider-item {
   position: relative;
-  /* min-height: 425px; */
 }
 
 .slider-item p {
@@ -579,8 +593,7 @@ margin: 0; */
 }
 
 .partners-list {
-/* margin: 0;
-padding: 0; */
+
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -878,6 +891,7 @@ padding: 0; */
 .map-image iframe {
   width: 100%;
   height:416px;
+  border: 0;
 }
 
 .map-marker {
@@ -1043,7 +1057,9 @@ padding: 0; */
   animation: bounce 1s;
 }
 
-
+.modal-error {
+  animation: shake 1s;
+}
 
 .modal-window {
   position: relative;
@@ -1181,8 +1197,8 @@ color: var(--basic-orange-hover);
 
 @keyframes shake {
   0%,
-  100% {
-    transform: translateX(0);
+  100%{
+    left:50%;
   }
 
   10%,
@@ -1190,14 +1206,14 @@ color: var(--basic-orange-hover);
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    left: 49%;
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    left: 51%;
   }
 }
 
@@ -1300,14 +1316,6 @@ color: var(--basic-orange-hover);
   margin-top: 48px;
 }
 
-/* .filter-item legend {
-font-weight: 700;
-font-size: 18px;
-line-height: 30px;
-color: var(--basic-black-color);
-text-transform: uppercase;
-} */
-
 .range-controls {
   position: relative;
   height: 41px;
@@ -1350,7 +1358,6 @@ text-transform: uppercase;
 }
 
 .toggle-max {
-/* left: 165px; */
   left: 62%;
 }
 
@@ -1370,8 +1377,7 @@ text-transform: uppercase;
 }
 
 .price-controls input {
-/* width: 60px;
-padding: 10px; */
+
   padding-top: 10px;
   padding-bottom: 10px;
   width: 80px;
@@ -1399,7 +1405,6 @@ padding: 10px; */
   border: none;
   margin: 0;
   padding: 0;
-/* margin-top: 37px; */
   margin-bottom: 47px;
 }
 
