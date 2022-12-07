@@ -45,3 +45,4 @@ thirdSlideButton.addEventListener ('click', function (evt) {
   thirdSlide.classList.add('slide-current');
   thirdSlideButton.classList.add('current');
 })
+
