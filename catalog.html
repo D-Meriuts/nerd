@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.min.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="img/favicons/180x180.png" sizes="180x180" />
@@ -296,7 +297,7 @@
     <div class="map">
       <div class="map-image">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5baaa5e708f5cc276d0650d82e32cb45ed8c13441041d5414aa9b1915f61ca3&amp;source=constructor"
-        width="100%" height="416" frameborder="0" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+        title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
       </div>
       <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="маркер на карте" />
     </div>
@@ -358,11 +359,11 @@
           <ul class="modal-form clear-list" >
             <li class="form-item">
               <label class="modal-label" for="name">Ваше имя:</label>
-              <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия" >
             </li>
             <li class="form-item">
               <label class="modal-label" for="e-mail">Ваш email:</label>
-              <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+              <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" >
             </li>
             <li class="form-item">
               <label class="modal-label" for="mail">Текст письма:</label>
@@ -388,7 +389,8 @@
       </button>
     </div>
   </section>
-  <script src="/js/modal.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 
 </html>
+
